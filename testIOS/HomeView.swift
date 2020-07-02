@@ -37,7 +37,7 @@ struct HomeView: View {
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
+            .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
             .navigationBarTitle("首页", displayMode: .inline)
             
         }

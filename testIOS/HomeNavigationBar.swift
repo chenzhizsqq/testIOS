@@ -12,7 +12,7 @@ private let kLabelWidth: CGFloat = 60
 private let kButtonHeight: CGFloat = 24
 
 struct HomeNavigationBar: View {
-    @Binding var leftPercent: CGFloat // 0 for left, 1 for right
+    @State var leftPercent: CGFloat // 0 for left, 1 for right
     
     var body: some View {
 //        VStack(spacing: 0) {
@@ -94,7 +94,7 @@ struct HomeNavigationBar: View {
 
 struct HomeNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        HomeNavigationBar(leftPercent: .constant(0))
-        //HomeNavigationBar(leftPercent: Double(0.0))
+        //HomeNavigationBar(leftPercent: .constant(0))
+        HomeNavigationBar(leftPercent: 0)
     }
 }

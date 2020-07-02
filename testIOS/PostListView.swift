@@ -17,6 +17,7 @@ struct PostListView: View {
             return loadPostListData("PostListData_recommend_1.json")
         case .hot:
                 return loadPostListData("PostListData_hot_1.json")
+            
         }
     }
     
