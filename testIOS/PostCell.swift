@@ -11,14 +11,18 @@ import SwiftUI
 struct PostCell: View {
     let post: Post
     
+    var bingdingPost: Post {
+        userData.post(forId: post.id)!
+    }
+    
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
-        VStack(alignment:  .leading, spacing: 10)
+        var post = bingdingPost
+        return  VStack(alignment:  .leading, spacing: 10)
         {
             
-            
             HStack(spacing: 5){
-                //Image(uiImage: UIImage(named: post.avatar)!)
                 post.avatarImage
                     .resizable()
                     .scaledToFill()
@@ -32,7 +36,7 @@ struct PostCell: View {
                 VStack(alignment: .leading, spacing: 5.0){
                     Text(post.name)
                         .font(Font.system(size: 16))
-                        .foregroundColor(Color(red: 254/255, green: 2/255, blue: 3/255))
+                        .foregroundColor(Color(red: 254/255, green: 2/255, blue: 4/255))
                         .lineLimit(1)
                     Text(post.date)
                         .font(.system(size: 11))
@@ -45,7 +49,9 @@ struct PostCell: View {
                     Spacer()//占位置空间
                     
                     Button(action: {
-                        print("Click follow button")//在debug输出中有显示
+                        post.isFollowed = true
+                        self.userData.update(post)
+                        //print("Click follow button")//在debug输出中有显示
                     }) {
                         Text("关注")
                             .font(.system(size: 14))
@@ -65,13 +71,6 @@ struct PostCell: View {
                 .font(.system(size: 17))
             
             if !post.images.isEmpty {
-                //Image(uiImage: UIImage(named: post.images[0])!)
-                
-//                loadImage(name: post.images[0])
-//                    .resizable()
-//                    .scaledToFill()
-//                    .frame(width: UIScreen.main.bounds.width-30, height: (UIScreen.main.bounds.width-30) * 0.75)
-//                    .clipped()
                 
                 PostImageCell(images: post.images, width: UIScreen.main.bounds.width - 30)
                 
@@ -82,25 +81,30 @@ struct PostCell: View {
             HStack(spacing: 0)
             {
                 Spacer()
-                HStack(spacing: 0) {
-                    PostCellToolbarButton(
-                        image: "message",
-                        text: post.commentCountText,
-                        color: .black)
-                    {
-                        print("print commend button")
-                    }
+                
+                PostCellToolbarButton(
+                    image: "message",
+                    text: post.commentCountText,
+                    color: .red)
+                {
+                    print("print commend button")
                 }
+                
                 Spacer()
                 
-                HStack(spacing: 0) {
-                    PostCellToolbarButton(
-                        image: "message",
-                        text: post.likeCountText,
-                        color: .black)
-                    {
-                        print("print commend button")
+                PostCellToolbarButton(
+                    image: post.isLiked ? "heart.fill" : "heart",
+                    text: post.likeCountText,
+                    color: post.isLiked ? .black : .black)
+                {
+                    if post.isLiked{
+                        post.isLiked = false
+                        post.likeCount -= 1
+                    } else {
+                        post.isLiked = true
+                        post.likeCount += 1
                     }
+                    self.userData.update(post)
                 }
                 Spacer()
             }
@@ -119,13 +123,8 @@ struct PostCell: View {
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
         
-        //        PostCell(post: Post(
-        //            avatar: "d0c21786ly1gavj2c0kcej20c8096dh7.jpg",
-        //            vip: true,
-        //            name: /*@START_MENU_TOKEN@*/"用户名称"/*@END_MENU_TOKEN@*/,
-        //            date: "2020-6-1",
-        //            isFollowed: false))
-        
-        PostCell(post: postList.list[1])
+        let userData = UserData()
+        return PostDetailView(post: userData.recommedPostList.list[0]).environmentObject(userData)
+        //PostCell(post: postList.list[1])
     }
 }
