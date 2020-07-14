@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var leftPercent: CGFloat = 0 // 0 for left, 1 for right
+    @State  var leftPercent: CGFloat = 0 // 0 for left, 1 for right
 
     init() {
         UITableView.appearance().separatorStyle = .none
@@ -37,7 +37,7 @@ struct HomeView: View {
                 }
             }
             .edgesIgnoringSafeArea(.bottom)
-            .navigationBarItems(leading: HomeNavigationBar(leftPercent: 0))
+            .navigationBarItems(leading: HomeNavigationBar(leftPercent: $leftPercent))
             .navigationBarTitle("首页", displayMode: .inline)
             
         }
