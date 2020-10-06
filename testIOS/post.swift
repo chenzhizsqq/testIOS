@@ -37,7 +37,7 @@ extension Post {
     }
     
     var commentCountText: String {
-        if commentCount <= 0 { return "评论" }
+        if commentCount <= 0 { return "评论1" }
         if commentCount < 1000 { return "\(commentCount)" }
         return String(format: "%.1fK", Double(commentCount) / 1000)
     }
