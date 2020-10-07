@@ -88,7 +88,7 @@ struct PostImageCell_Previews: PreviewProvider {
 //            PostImageCell(images: Array(list[0].images[0...3]), width: width)
 //            PostImageCell(images: Array(list[0].images[0...4]), width: width)
 //            PostImageCell(images: Array(list[0].images[0...5]), width: width)
-            
+
             PostImageCell(images: Array(images[0...0]), width: width)
             PostImageCell(images: Array(images[0...1]), width: width)
             PostImageCell(images: Array(images[0...2]), width: width)

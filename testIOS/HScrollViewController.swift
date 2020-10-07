@@ -66,17 +66,15 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
         var scrollView: UIScrollView!
         var host: UIHostingController<Content>!
         
-        init(_ parent: HScrollViewController){
+        init(_ parent: HScrollViewController) {
             self.parent = parent
         }
         
         func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-            //print("scrollViewDidEndDecelerating End")
-            withAnimation{
+            withAnimation {
                 parent.leftPercent = scrollView.contentOffset.x < parent.pageWidth * 0.5 ? 0 : 1
             }
         }
-        
     }
 }
 

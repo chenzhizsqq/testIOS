@@ -16,17 +16,18 @@ struct PostCellToolbarButton: View {
     
     var body: some View {
         
-        Button(action: {}) {
+        Button(action: action) {
             HStack(spacing: 5) {
                 Image(systemName: image)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 18, height: 18)
+                
                 Text(text)
                     .font(.system(size: 15))
             }
         }
-        //.foregroundColor(.black)
+        .foregroundColor(color)
         .buttonStyle(BorderlessButtonStyle())
     }
 }
