@@ -109,7 +109,6 @@
 		33AC0452249657A3007CC63A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33AC0451249657A3007CC63A /* Default-568h@2x.png */; };
 		33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC04532498B258007CC63A /* PostCellToolbarButton.swift */; };
 		33AC04562498C3C4007CC63A /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC04552498C3C4007CC63A /* PostListView.swift */; };
-		33D62740252DEEF800ACF08D /* testSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6273F252DEEF800ACF08D /* testSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -218,7 +217,6 @@
 		33AC0451249657A3007CC63A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33AC04532498B258007CC63A /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
 		33AC04552498C3C4007CC63A /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
-		33D6273F252DEEF800ACF08D /* testSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +260,6 @@
 				333A0D46249B5A3200195CEE /* PostDetailView.swift */,
 				333A0D44249B3DDD00195CEE /* PostImageCell.swift */,
 				33AC04552498C3C4007CC63A /* PostListView.swift */,
-				33D6273F252DEEF800ACF08D /* testSwiftUIView.swift */,
 				33A736FB2493B5930050C7E4 /* PostVIPBadge.swift */,
 				3349B883252D944200472A02 /* CommentInputView.swift */,
 				3349B885252DA4EE00472A02 /* CommentTextView.swift */,
@@ -537,7 +534,6 @@
 				333A0D47249B5A3200195CEE /* PostDetailView.swift in Sources */,
 				3349B886252DA4EE00472A02 /* CommentTextView.swift in Sources */,
 				33A736412493B53F0050C7E4 /* SceneDelegate.swift in Sources */,
-				33D62740252DEEF800ACF08D /* testSwiftUIView.swift in Sources */,
 				33AC04562498C3C4007CC63A /* PostListView.swift in Sources */,
 				33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */,
 				336257A72494BBA8001765A3 /* post.swift in Sources */,
