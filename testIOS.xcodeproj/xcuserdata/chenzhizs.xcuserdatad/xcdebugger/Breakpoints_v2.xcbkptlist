@@ -3,4 +3,84 @@
    uuid = "D4F5A1B9-5F10-4CD7-B6C2-A540D42A1131"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testIOS/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - d2bfd9961500829d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testIOS.AppDelegate.__deallocating_deinit"
+                  moduleName = "testIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 827427c4230164f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testIOS.AppDelegate.__allocating_init() -&gt; testIOS.AppDelegate"
+                  moduleName = "testIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - e988f2c95c2f1f49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testIOS.AppDelegate.init() -&gt; testIOS.AppDelegate"
+                  moduleName = "testIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 9f1a02715f8df949"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "testIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
