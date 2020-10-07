@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "testIOS/AppDelegate.swift"
@@ -20,14 +20,14 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - d2bfd9961500829d"
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - c78c9a8c0c49693f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "testIOS.AppDelegate.__deallocating_deinit"
                   moduleName = "testIOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  urlString = "file:///Users/chenzhizs/Desktop/mac%20%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/swift%E5%AD%A6%E4%B9%A0%E6%96%87%E4%BB%B6/BBCo%20-%20iOS%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%20SwiftUI%20%E5%BE%AE%E5%8D%9AApp%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/PostDemo%201-10%20chenzhi/testIOS/testIOS/AppDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -35,14 +35,14 @@
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 827427c4230164f1"
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 974764de3a488f53"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "testIOS.AppDelegate.__allocating_init() -&gt; testIOS.AppDelegate"
                   moduleName = "testIOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  urlString = "file:///Users/chenzhizs/Desktop/mac%20%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/swift%E5%AD%A6%E4%B9%A0%E6%96%87%E4%BB%B6/BBCo%20-%20iOS%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%20SwiftUI%20%E5%BE%AE%E5%8D%9AApp%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/PostDemo%201-10%20chenzhi/testIOS/testIOS/AppDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -50,14 +50,14 @@
                   offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - e988f2c95c2f1f49"
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - fcbbb1d34566f4eb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "testIOS.AppDelegate.init() -&gt; testIOS.AppDelegate"
                   moduleName = "testIOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  urlString = "file:///Users/chenzhizs/Desktop/mac%20%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/swift%E5%AD%A6%E4%B9%A0%E6%96%87%E4%BB%B6/BBCo%20-%20iOS%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%20SwiftUI%20%E5%BE%AE%E5%8D%9AApp%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/PostDemo%201-10%20chenzhi/testIOS/testIOS/AppDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -65,14 +65,14 @@
                   offsetFromSymbolStart = "93">
                </Location>
                <Location
-                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 9f1a02715f8df949"
+                  uuid = "C12C9F30-4C95-43CF-8F61-AE0229CA8DB0 - 8a29416b46c412eb"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "main"
                   moduleName = "testIOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/chenzhizs/Downloads/untitled%20folder/testIOS/testIOS/AppDelegate.swift"
+                  urlString = "file:///Users/chenzhizs/Desktop/mac%20%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E9%A1%B9%E7%9B%AE/swift%E5%AD%A6%E4%B9%A0%E6%96%87%E4%BB%B6/BBCo%20-%20iOS%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%20SwiftUI%20%E5%BE%AE%E5%8D%9AApp%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/PostDemo%201-10%20chenzhi/testIOS/testIOS/AppDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
