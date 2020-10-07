@@ -11,16 +11,18 @@ import SwiftUI
 struct PostCell: View {
     let post: Post
     
+    
     var bingdingPost: Post {
         userData.post(forId: post.id)!
     }
+    
+    @State var presentComment: Bool = false
     
     @EnvironmentObject var userData: UserData
     
     var body: some View {
         var post = bingdingPost
-        return  VStack(alignment:  .leading, spacing: 10)
-        {
+        return  VStack(alignment:  .leading, spacing: 10){
             
             HStack(spacing: 5){
                 post.avatarImage
@@ -51,7 +53,7 @@ struct PostCell: View {
                     Button(action: {
                         post.isFollowed = true
                         self.userData.update(post)
-                        //print("Click follow button")//在debug输出中有显示
+                        print("Click follow button")//在debug输出中有显示
                     }) {
                         Text("关注")
                             .font(.system(size: 14))
@@ -78,8 +80,7 @@ struct PostCell: View {
             
             Divider()
             
-            HStack(spacing: 0)
-            {
+            HStack(spacing: 0){
                 Spacer()
                 
                 PostCellToolbarButton(
@@ -87,7 +88,10 @@ struct PostCell: View {
                     text: post.commentCountText,
                     color: .red)
                 {
+                    self.presentComment = true
                     print("print commend button")
+                }.sheet(isPresented: $presentComment) {
+                    CommentInputView(post: post).environmentObject(self.userData)
                 }
                 
                 Spacer()
@@ -95,14 +99,17 @@ struct PostCell: View {
                 PostCellToolbarButton(
                     image: post.isLiked ? "heart.fill" : "heart",
                     text: post.likeCountText,
-                    color: post.isLiked ? .black : .black)
+                    color: post.isLiked ? .red : .black)
                 {
+                    print("PostCellToolbarButton")
                     if post.isLiked{
                         post.isLiked = false
                         post.likeCount -= 1
+                        print("likeCount -1")
                     } else {
                         post.isLiked = true
                         post.likeCount += 1
+                        print("likeCount +1")
                     }
                     self.userData.update(post)
                 }
@@ -112,7 +119,7 @@ struct PostCell: View {
             Rectangle()
                 .padding(.horizontal, -15)
                 .frame(height: 10)
-            .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
+                .foregroundColor(Color(red: 238/255, green: 238/255, blue: 238/255))
             
         }
         .padding(.horizontal,15)

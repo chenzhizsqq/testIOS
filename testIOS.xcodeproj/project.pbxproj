@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		333A0D45249B3DDD00195CEE /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A0D44249B3DDD00195CEE /* PostImageCell.swift */; };
 		333A0D47249B5A3200195CEE /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A0D46249B5A3200195CEE /* PostDetailView.swift */; };
+		3349B884252D944200472A02 /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349B883252D944200472A02 /* CommentInputView.swift */; };
+		3349B886252DA4EE00472A02 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349B885252DA4EE00472A02 /* CommentTextView.swift */; };
 		336257A72494BBA8001765A3 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336257A62494BBA8001765A3 /* post.swift */; };
 		336CE28924A5EABD00D41675 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CE28824A5EABD00D41675 /* HScrollViewController.swift */; };
 		33A7363F2493B53F0050C7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7363E2493B53F0050C7E4 /* AppDelegate.swift */; };
@@ -112,6 +114,8 @@
 /* Begin PBXFileReference section */
 		333A0D44249B3DDD00195CEE /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		333A0D46249B5A3200195CEE /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		3349B883252D944200472A02 /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
+		3349B885252DA4EE00472A02 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
 		336257A62494BBA8001765A3 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		336CE28824A5EABD00D41675 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		339B276E249477DA006895B3 /* testIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testIOS.entitlements; sourceTree = "<group>"; };
@@ -246,25 +250,26 @@
 		33A7363D2493B53F0050C7E4 /* testIOS */ = {
 			isa = PBXGroup;
 			children = (
-				339B276E249477DA006895B3 /* testIOS.entitlements */,
-				33A7364C2493B5410050C7E4 /* Info.plist */,
 				33A7363E2493B53F0050C7E4 /* AppDelegate.swift */,
-				33AA9944249CA33800EDB50A /* HomeNavigationBar.swift */,
+				33A736402493B53F0050C7E4 /* SceneDelegate.swift */,
 				33AA9946249CB0CD00EDB50A /* HomeView.swift */,
+				33AA9944249CA33800EDB50A /* HomeNavigationBar.swift */,
 				336CE28824A5EABD00D41675 /* HScrollViewController.swift */,
-				336257A62494BBA8001765A3 /* post.swift */,
 				33A736F92493B58B0050C7E4 /* PostCell.swift */,
 				33AC04532498B258007CC63A /* PostCellToolbarButton.swift */,
 				333A0D46249B5A3200195CEE /* PostDetailView.swift */,
 				333A0D44249B3DDD00195CEE /* PostImageCell.swift */,
 				33AC04552498C3C4007CC63A /* PostListView.swift */,
 				33A736FB2493B5930050C7E4 /* PostVIPBadge.swift */,
-				33A736402493B53F0050C7E4 /* SceneDelegate.swift */,
+				3349B883252D944200472A02 /* CommentInputView.swift */,
+				3349B885252DA4EE00472A02 /* CommentTextView.swift */,
+				336257A62494BBA8001765A3 /* post.swift */,
 				33AA9948249CB4EA00EDB50A /* UserData.swift */,
 				33A736442493B5410050C7E4 /* Assets.xcassets */,
 				33A736492493B5410050C7E4 /* LaunchScreen.storyboard */,
 				33A736462493B5410050C7E4 /* Preview Content */,
 				33A736522493B5740050C7E4 /* Resources */,
+				33A7364C2493B5410050C7E4 /* Info.plist */,
 			);
 			path = testIOS;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 		33A736522493B5740050C7E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				339B276E249477DA006895B3 /* testIOS.entitlements */,
 				33A736532493B5740050C7E4 /* 8697cf1ely8gashxj3b09j20u00u040v.jpg */,
 				33A736542493B5740050C7E4 /* d0c21786ly1gavj2c0kcej20c8096dh7.jpg */,
 				33A736552493B5740050C7E4 /* 6ec3b446jw1e8qgp5bmzyj2050050aa8.jpg */,
@@ -526,11 +532,13 @@
 				33A7363F2493B53F0050C7E4 /* AppDelegate.swift in Sources */,
 				336CE28924A5EABD00D41675 /* HScrollViewController.swift in Sources */,
 				333A0D47249B5A3200195CEE /* PostDetailView.swift in Sources */,
+				3349B886252DA4EE00472A02 /* CommentTextView.swift in Sources */,
 				33A736412493B53F0050C7E4 /* SceneDelegate.swift in Sources */,
 				33AC04562498C3C4007CC63A /* PostListView.swift in Sources */,
 				33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */,
 				336257A72494BBA8001765A3 /* post.swift in Sources */,
 				33AA9945249CA33800EDB50A /* HomeNavigationBar.swift in Sources */,
+				3349B884252D944200472A02 /* CommentInputView.swift in Sources */,
 				33A736FA2493B58B0050C7E4 /* PostCell.swift in Sources */,
 				33AA9947249CB0CD00EDB50A /* HomeView.swift in Sources */,
 				333A0D45249B3DDD00195CEE /* PostImageCell.swift in Sources */,
