@@ -50,6 +50,6 @@ struct CommentTextView: UIViewRepresentable {
 
 struct CommentTextView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentTextView(text: .constant("Text"), beginEditingOnAppear: false)
+        CommentTextView(text: .constant("Text"), beginEditingOnAppear: true)
     }
 }

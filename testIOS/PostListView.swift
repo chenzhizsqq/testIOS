@@ -13,16 +13,6 @@ struct PostListView: View {
     
     @EnvironmentObject var userData: UserData
     
-//    var postList: PostList {
-//        switch category {
-//        case .recommend:
-//            return loadPostListData("PostListData_recommend_1.json")
-//        case .hot:
-//                return loadPostListData("PostListData_hot_1.json")
-//
-//        }
-//    }
-    
     
 
     var body: some View {
