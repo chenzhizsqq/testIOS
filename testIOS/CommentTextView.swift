@@ -1,9 +1,9 @@
 //
 //  CommentTextView.swift
-//  PostDemo
+//  testIOS
 //
 //  Created by xiaoyouxinqing on 1/14/20.
-//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
+//  Copyright © 2020 chenzhizs. All rights reserved.
 //
 
 import SwiftUI
