@@ -1,9 +1,9 @@
 //
-//  PostListView.swift
-//  testIOS
+//  ContentView.swift
+//  PostDemo
 //
-//  Created by chenzhizs on 2020/06/16.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Created by xiaoyouxinqing on 1/6/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
 import SwiftUI
@@ -13,8 +13,6 @@ struct PostListView: View {
     
     @EnvironmentObject var userData: UserData
     
-    
-
     var body: some View {
         List {
             ForEach(userData.postList(for: category).list) { post in
@@ -28,15 +26,23 @@ struct PostListView: View {
                 .listRowInsets(EdgeInsets())
             }
         }
+        
+        /*
+        // Left margin is not removed
+        List(postList.list, id: \.name) { post in
+            PostCell(post: post)
+        }
+         */
     }
 }
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView{
+        NavigationView {
             PostListView(category: .recommend)
-            .navigationBarTitle("title")
-            .navigationBarHidden(true)
-        }.environmentObject(UserData())
+                .environmentObject(UserData())
+                .navigationBarTitle("Title")
+                .navigationBarHidden(true)
+        }
     }
 }

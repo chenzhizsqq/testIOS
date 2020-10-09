@@ -1,9 +1,9 @@
 //
 //  CommentInputView.swift
-//  testIOS
+//  PostDemo
 //
-//  Created by chenzhizs on 2020/10/07.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Created by xiaoyouxinqing on 1/14/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
 import SwiftUI
@@ -21,24 +21,24 @@ struct CommentInputView: View {
     @ObservedObject private var keyboardResponder = KeyboardResponder()
     
     var body: some View {
-        VStack(spacing: 0){
+        VStack(spacing: 0) {
             CommentTextView(text: $text, beginEditingOnAppear: true)
             
-            HStack(spacing: 0){
+            HStack(spacing: 0) {
                 Button(action: {
-                    print("Cancel")
                     self.presentationMode.wrappedValue.dismiss()
-                }){
-                    Text("取消").padding()
+                }) {
+                    Text("取消")
+                        .padding()
                 }
                 
-                Spacer();
+                Spacer()
                 
                 Button(action: {
-                    print("Send")
                     if self.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                         self.showEmptyTextHUD = true
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5 ){
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                             self.showEmptyTextHUD = false
                         }
                         return
@@ -48,28 +48,28 @@ struct CommentInputView: View {
                     post.commentCount += 1
                     self.userData.update(post)
                     self.presentationMode.wrappedValue.dismiss()
-                }){
-                    Text("发送").padding()
+                }) {
+                    Text("发送")
+                        .padding()
                 }
             }
-            .font(.system(size:18))
+            .font(.system(size: 18))
             .foregroundColor(.black)
         }
         .overlay(
             Text("评论不能为空")
-                .scaleEffect(showEmptyTextHUD ? 1 : 0.5 )
-                .animation(.spring(dampingFraction : 0.5))
+                .scaleEffect(showEmptyTextHUD ? 1 : 0.5)
+                .animation(.spring(dampingFraction: 0.5))
                 .opacity(showEmptyTextHUD ? 1 : 0)
                 .animation(.easeInOut)
         )
         .padding(.bottom, keyboardResponder.keyboardHeight)
         .edgesIgnoringSafeArea(keyboardResponder.keyboardShow ? .bottom : [])
-        
     }
 }
 
 struct CommentInputView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentInputView(post: UserData().recommedPostList.list[0])
+        CommentInputView(post: UserData().recommendPostList.list[0])
     }
 }

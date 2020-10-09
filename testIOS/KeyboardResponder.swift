@@ -1,9 +1,9 @@
 //
 //  KeyboardResponder.swift
-//  testIOS
+//  PostDemo
 //
-//  Created by chenzhizs on 2020/10/08.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Created by xiaoyouxinqing on 1/14/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
 import SwiftUI
@@ -18,10 +18,7 @@ class KeyboardResponder: ObservableObject {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIWindow.keyboardWillHideNotification, object: nil)
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-        //ios9前需要这一句，移除监听者
-    }
+    deinit { NotificationCenter.default.removeObserver(self) }
     
     @objc private func keyboardWillShow(_ notification: Notification) {
         guard let frame = notification.userInfo?[UIWindow.keyboardFrameEndUserInfoKey] as? CGRect else { return }

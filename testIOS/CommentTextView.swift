@@ -1,9 +1,9 @@
 //
 //  CommentTextView.swift
-//  testIOS
+//  PostDemo
 //
 //  Created by xiaoyouxinqing on 1/14/20.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
 import SwiftUI
@@ -50,6 +50,6 @@ struct CommentTextView: UIViewRepresentable {
 
 struct CommentTextView_Previews: PreviewProvider {
     static var previews: some View {
-        CommentTextView(text: .constant("Text"), beginEditingOnAppear: true)
+        CommentTextView(text: .constant("Text"), beginEditingOnAppear: false)
     }
 }

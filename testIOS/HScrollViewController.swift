@@ -1,16 +1,14 @@
 //
 //  HScrollViewController.swift
-//  testIOS
+//  PostDemo
 //
-//  Created by chenzhizs on 2020/06/26.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Created by xiaoyouxinqing on 1/10/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
 import SwiftUI
 
 struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
-    
-    
     let pageWidth: CGFloat
     let contentSize: CGSize
     let content: Content
@@ -18,8 +16,9 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
     
     init(pageWidth: CGFloat,
          contentSize: CGSize,
-         leftPercent:Binding<CGFloat>,
-        @ViewBuilder content: () -> Content) {
+         leftPercent: Binding<CGFloat>,
+         @ViewBuilder content: () -> Content) {
+        
         self.pageWidth = pageWidth
         self.contentSize = contentSize
         self.content = content()
@@ -27,10 +26,10 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
     }
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(self)
+        Coordinator(self)
     }
     
-    func makeUIViewController(context: Context) ->  UIViewController {
+    func makeUIViewController(context: Context) -> UIViewController {
         let scrollView = UIScrollView()
         scrollView.bounces = false
         scrollView.isPagingEnabled = true
@@ -48,8 +47,6 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
         host.didMove(toParent: vc)
         context.coordinator.host = host
         
-        
-        
         return vc
     }
     
@@ -61,7 +58,7 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
         context.coordinator.host.view.frame = CGRect(origin: .zero, size: contentSize)
     }
     
-    class Coordinator: NSObject ,UIScrollViewDelegate {
+    class Coordinator: NSObject, UIScrollViewDelegate {
         let parent: HScrollViewController
         var scrollView: UIScrollView!
         var host: UIHostingController<Content>!
@@ -78,3 +75,13 @@ struct HScrollViewController<Content: View>: UIViewControllerRepresentable {
     }
 }
 
+//struct HScrollViewController_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HScrollViewController(pageWidth: UIScreen.main.bounds.width,
+//                    contentSize: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height),
+//                    leftPercent: .constant(0))
+//        {
+//            Text("ASD")
+//        }
+//    }
+//}

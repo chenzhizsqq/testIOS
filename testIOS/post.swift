@@ -1,18 +1,20 @@
 //
-//  post.swift
-//  test0613
+//  Post.swift
+//  PostDemo
 //
-//  Created by chenzhizs on 2020/06/13.
-//  Copyright © 2020 chenzhizs. All rights reserved.
+//  Created by xiaoyouxinqing on 1/6/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
 //
 
+import Foundation
+import UIKit
 import SwiftUI
 
 struct PostList: Codable {
     var list: [Post]
 }
 
-struct Post: Codable ,Identifiable {
+struct Post: Codable, Identifiable {
     let id: Int
     let avatar: String // image name
     let vip: Bool
@@ -23,21 +25,19 @@ struct Post: Codable ,Identifiable {
     
     let text: String
     let images: [String] // image names
-
+    
     var commentCount: Int
     var likeCount: Int
     var isLiked: Bool
-    
 }
 
 extension Post {
-    
     var avatarImage: Image {
         return loadImage(name: avatar)
     }
     
     var commentCountText: String {
-        if commentCount <= 0 { return "评论4" }
+        if commentCount <= 0 { return "评论" }
         if commentCount < 1000 { return "\(commentCount)" }
         return String(format: "%.1fK", Double(commentCount) / 1000)
     }
@@ -48,8 +48,6 @@ extension Post {
         return String(format: "%.1fK", Double(likeCount) / 1000)
     }
 }
-
-let postList = loadPostListData("PostListData_recommend_1.json")
 
 func loadPostListData(_ fileName: String) -> PostList {
     guard let url = Bundle.main.url(forResource: fileName, withExtension: nil) else {
@@ -66,5 +64,4 @@ func loadPostListData(_ fileName: String) -> PostList {
 
 func loadImage(name: String) -> Image {
     return Image(uiImage: UIImage(named: name)!)
-    
 }
