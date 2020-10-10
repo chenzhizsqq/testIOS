@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  PostDemo
+//  NetworkChen
 //
-//  Created by xiaoyouxinqing on 1/6/20.
-//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
+//  Created by chenzhizs on 2020/10/10.
+//  Copyright © 2020 chenzhizs. All rights reserved.
 //
 
 import UIKit
