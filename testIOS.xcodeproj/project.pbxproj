@@ -108,6 +108,7 @@
 		33AC0452249657A3007CC63A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 33AC0451249657A3007CC63A /* Default-568h@2x.png */; };
 		33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC04532498B258007CC63A /* PostCellToolbarButton.swift */; };
 		33AC04562498C3C4007CC63A /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC04552498C3C4007CC63A /* PostListView.swift */; };
+		33BC95FE2531BCD10082D921 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC95FD2531BCD00082D921 /* Post.swift */; };
 		33FD033F252EB225005E94AA /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FD033E252EB225005E94AA /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
 
@@ -216,6 +217,7 @@
 		33AC0451249657A3007CC63A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		33AC04532498B258007CC63A /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
 		33AC04552498C3C4007CC63A /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		33BC95FD2531BCD00082D921 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		33FD033E252EB225005E94AA /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +258,7 @@
 				33AA9944249CA33800EDB50A /* HomeNavigationBar.swift */,
 				336CE28824A5EABD00D41675 /* HScrollViewController.swift */,
 				33AC04552498C3C4007CC63A /* PostListView.swift */,
+				33BC95FD2531BCD00082D921 /* Post.swift */,
 				33A736F92493B58B0050C7E4 /* PostCell.swift */,
 				33A736FB2493B5930050C7E4 /* PostVIPBadge.swift */,
 				333A0D44249B3DDD00195CEE /* PostImageCell.swift */,
@@ -539,6 +542,7 @@
 				33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */,
 				33AA9945249CA33800EDB50A /* HomeNavigationBar.swift in Sources */,
 				3349B884252D944200472A02 /* CommentInputView.swift in Sources */,
+				33BC95FE2531BCD10082D921 /* Post.swift in Sources */,
 				33A736FA2493B58B0050C7E4 /* PostCell.swift in Sources */,
 				33AA9947249CB0CD00EDB50A /* HomeView.swift in Sources */,
 				333A0D45249B3DDD00195CEE /* PostImageCell.swift in Sources */,
