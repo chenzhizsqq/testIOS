@@ -13,6 +13,7 @@
 		330001992531430B00DB1016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330001982531430B00DB1016 /* Assets.xcassets */; };
 		3300019C2531430B00DB1016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3300019B2531430B00DB1016 /* Preview Assets.xcassets */; };
 		3300019F2531430B00DB1016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3300019D2531430B00DB1016 /* LaunchScreen.storyboard */; };
+		3310AF732531679900F3C1B0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310AF722531679900F3C1B0 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3300019B2531430B00DB1016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3300019E2531430B00DB1016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330001A02531430B00DB1016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3310AF722531679900F3C1B0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				330001922531430A00DB1016 /* AppDelegate.swift */,
 				330001942531430A00DB1016 /* SceneDelegate.swift */,
 				330001962531430A00DB1016 /* ContentView.swift */,
+				3310AF722531679900F3C1B0 /* Post.swift */,
 				330001982531430B00DB1016 /* Assets.xcassets */,
 				3300019D2531430B00DB1016 /* LaunchScreen.storyboard */,
 				330001A02531430B00DB1016 /* Info.plist */,
@@ -149,6 +152,7 @@
 				330001932531430A00DB1016 /* AppDelegate.swift in Sources */,
 				330001952531430A00DB1016 /* SceneDelegate.swift in Sources */,
 				330001972531430A00DB1016 /* ContentView.swift in Sources */,
+				3310AF732531679900F3C1B0 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

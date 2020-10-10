@@ -1,10 +1,16 @@
 //
 //  Post.swift
 //  PostDemo
+<<<<<<< HEAD
 //
 //  Created by xiaoyouxinqing on 1/6/20.
 //  Copyright © 2020 xiaoyouxinqing. All rights reserved.
+=======
+>>>>>>> c0f3a2f0365d478ddb3a7ea7b75bb967cea6f50d
 //
+//  Created by xiaoyouxinqing on 1/6/20.
+//  Copyright © 2020 xiaoyouxinqing. All rights reserved.
+//1234
 
 import Foundation
 import UIKit
