@@ -6,16 +6,25 @@
 //  Copyright © 2020 chenzhizs. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
-struct Post: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct PostList: Codable {
+    var list: [Post]
 }
 
-struct Post_Previews: PreviewProvider {
-    static var previews: some View {
-        Post()
-    }
+struct Post: Codable, Identifiable {
+    let id: Int
+    let avatar: String // image name
+    let vip: Bool
+    let name: String
+    let date: String // yyyy-MM-dd HH:mm:ss
+    
+    var isFollowed: Bool
+    
+    let text: String
+    let images: [String] // image names
+    
+    var commentCount: Int
+    var likeCount: Int
+    var isLiked: Bool
 }
