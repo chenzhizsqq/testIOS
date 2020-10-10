@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
     @State private var text = ""
@@ -34,47 +35,25 @@ struct ContentView: View {
     }
     
     func startLoad() {
-        let url = URL(string: "https://raw.githubusercontent.com/chenzhizsqq/testIOS/master/testIOS/Resources/PostListData_recommend_1.json")!
-        
-        var request = URLRequest(url: url)
-        request.timeoutInterval = 15
-        request.httpMethod = "POST"
-        let dic = ["key": "value"]
-        let data = try! JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
-        request.httpBody = data
-        request.addValue("application/json", forHTTPHeaderField: "content-Type")
-        
-        let task = URLSession.shared.dataTask(with: url) {data,response,error in
-            if let error = error {
+        let url = "https://raw.githubusercontent.com/chenzhizsqq/testIOS/master/testIOS/Resources/PostListData_recommend_1.json"
+        AF.request(url).responseData{ response in
+            switch response.result{
+            case let .success(data):
+                guard let list = try? JSONDecoder().decode(PostList.self, from: data)  else {
+                    self.updateText("Can not parse data")
+                    return
+                }
+                
+                self.updateText("Post count \(list.list.count)")
+                
+            case let .failure(error):
                 self.updateText(error.localizedDescription)
             }
-            
-            guard let httpResponse = response as? HTTPURLResponse,
-                httpResponse.statusCode == 200 else {
-                    self.updateText("Invalid response")
-                    return
-            }
-            
-            guard let data = data else {
-                    self.updateText("No data")
-                    return
-            }
-            
-            guard let list = try? JSONDecoder().decode(PostList.self, from: data) else {
-                self.updateText("Can not parse data")
-                return
-            }
-            
-            self.updateText("Post count \(list.list.count)")
         }
-        task.resume()
-        
     }
     
     func updateText(_ text: String){
-        DispatchQueue.main.async {
-            self.text = text
-        }
+        self.text = text
     }
 }
 
