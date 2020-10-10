@@ -11,7 +11,6 @@
 		333A0D47249B5A3200195CEE /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A0D46249B5A3200195CEE /* PostDetailView.swift */; };
 		3349B884252D944200472A02 /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349B883252D944200472A02 /* CommentInputView.swift */; };
 		3349B886252DA4EE00472A02 /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3349B885252DA4EE00472A02 /* CommentTextView.swift */; };
-		336257A72494BBA8001765A3 /* post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336257A62494BBA8001765A3 /* post.swift */; };
 		336CE28924A5EABD00D41675 /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CE28824A5EABD00D41675 /* HScrollViewController.swift */; };
 		33A7363F2493B53F0050C7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A7363E2493B53F0050C7E4 /* AppDelegate.swift */; };
 		33A736412493B53F0050C7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A736402493B53F0050C7E4 /* SceneDelegate.swift */; };
@@ -117,7 +116,6 @@
 		333A0D46249B5A3200195CEE /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		3349B883252D944200472A02 /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		3349B885252DA4EE00472A02 /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
-		336257A62494BBA8001765A3 /* post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post.swift; sourceTree = "<group>"; };
 		336CE28824A5EABD00D41675 /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
 		339B276E249477DA006895B3 /* testIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testIOS.entitlements; sourceTree = "<group>"; };
 		33A7363B2493B53F0050C7E4 /* testIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,7 +264,6 @@
 				3349B883252D944200472A02 /* CommentInputView.swift */,
 				3349B885252DA4EE00472A02 /* CommentTextView.swift */,
 				33FD033E252EB225005E94AA /* KeyboardResponder.swift */,
-				336257A62494BBA8001765A3 /* post.swift */,
 				33AA9948249CB4EA00EDB50A /* UserData.swift */,
 				33A736442493B5410050C7E4 /* Assets.xcassets */,
 				33A736492493B5410050C7E4 /* LaunchScreen.storyboard */,
@@ -540,7 +537,6 @@
 				33A736412493B53F0050C7E4 /* SceneDelegate.swift in Sources */,
 				33AC04562498C3C4007CC63A /* PostListView.swift in Sources */,
 				33AC04542498B258007CC63A /* PostCellToolbarButton.swift in Sources */,
-				336257A72494BBA8001765A3 /* post.swift in Sources */,
 				33AA9945249CA33800EDB50A /* HomeNavigationBar.swift in Sources */,
 				3349B884252D944200472A02 /* CommentInputView.swift in Sources */,
 				33A736FA2493B58B0050C7E4 /* PostCell.swift in Sources */,
