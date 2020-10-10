@@ -5,7 +5,6 @@
 //  Created by chenzhizs on 2020/10/10.
 //  Copyright © 2020 chenzhizs. All rights reserved.
 //
-
 import Foundation
 
 struct PostList: Codable {
