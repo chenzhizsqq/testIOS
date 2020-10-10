@@ -35,6 +35,15 @@ struct ContentView: View {
     
     func startLoad() {
         let url = URL(string: "https://raw.githubusercontent.com/chenzhizsqq/testIOS/master/testIOS/Resources/PostListData_recommend_1.json")!
+        
+        var request = URLRequest(url: url)
+        request.timeoutInterval = 15
+        request.httpMethod = "POST"
+        let dic = ["key": "value"]
+        let data = try! JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
+        request.httpBody = data
+        request.addValue("application/json", forHTTPHeaderField: "content-Type")
+        
         let task = URLSession.shared.dataTask(with: url) {data,response,error in
             if let error = error {
                 self.updateText(error.localizedDescription)
