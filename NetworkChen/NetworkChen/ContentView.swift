@@ -35,20 +35,14 @@ struct ContentView: View {
     }
     
     func startLoad() {
-        NetworkManager.shared.requestGet(path: "PostListData_recommend_1.json",parameters: nil){ result in
+        NetworkAPI.hotPostList {  result in
             switch result{
-            case let .success(data):
-                guard let list = try? JSONDecoder().decode(PostList.self, from: data)  else {
-                    self.updateText("Can not parse data")
-                    return
-                }
+            case let .success(list): self.updateText("Post count \(list.list.count)")
                 
-                self.updateText("Post count \(list.list.count)")
-                
-            case let .failure(error):
-                self.updateText(error.localizedDescription)
+            case let .failure(error): self.updateText(error.localizedDescription)
             }
         }
+        
     }
     
     func updateText(_ text: String){
