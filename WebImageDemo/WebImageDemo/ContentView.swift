@@ -8,9 +8,20 @@
 
 import SwiftUI
 
+private let url = URL(string: "https://raw.githubusercontent.com/chenzhizsqq/testIOS/master/testIOS/Resources/006PdkDogy1gap6ngj12ej30u011itf7.jpg")!
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List{
+                NavigationLink(destination: SimpleExample(url: url)) {
+                    Text("SimpleExample")
+                }
+                NavigationLink(destination: WebImageExample()) {
+                    Text("WebImageExample")
+                }
+            }
+        }
     }
 }
 
